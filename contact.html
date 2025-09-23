@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Contact - MI349 Blog</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<header>
+		<h1>MI349 Blog</h1>
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<section>
+			<h2>Contact Me</h2>
+			<form action="#" method="post">
+				<div>
+					<label for="name">Name:</label>
+					<input type="text" id="name" name="name" required>
+				</div>
+				<div>
+					<label for="email">Email Address:</label>
+					<input type="email" id="email" name="email" required>
+				</div>
+				<div>
+					<label for="reason">Reason for Contact:</label>
+					<select id="reason" name="reason" required>
+						<option value="">--Please choose an option--</option>
+						<option value="hi">Saying hi</option>
+						<option value="contractor">Looking for a contractor</option>
+						<option value="interview">Interested in an interview</option>
+					</select>
+				</div>
+				<div>
+					<label for="comments">Comments:</label>
+					<textarea id="comments" name="comments" rows="5" required></textarea>
+				</div>
+				<div>
+					<button type="submit">Submit</button>
+				</div>
+			</form>
+		</section>
+	</main>
+	<footer>
+		<p>&copy; 2025 MI349 Blog. All rights reserved.</p>
+	</footer>
+</body>
+</html>
