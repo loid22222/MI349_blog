@@ -1,0 +1,24 @@
+h1{
+    color: #3E6990;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 36px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.396);
+}
+
+body {
+    background-color: #E9E3B4;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #381D2A;
+}
+
+h2 {
+    color: #F39B6D;
+    font-size: 28px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
