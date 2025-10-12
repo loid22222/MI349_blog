@@ -7,48 +7,60 @@
 	<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-	<header>
-		<h1>MI349 Blog</h1>
-		<nav>
-			<ul>
-				<li><a href="index.html">Home</a></li>
-				<li><a href="about.html">About</a></li>
-				<li><a href="contact.html">Contact</a></li>
-			</ul>
-		</nav>
-	</header>
-	<main>
-		<section>
-			<h2>Contact Me</h2>
-			<form name="contact" method="POST" data-netlify="true">
-				<input type="hidden" name="form-name" value="contact">
-				<div>
-					<label for="name">Name:</label>
-					<input type="text" id="name" name="name" required>
-				</div>
-				<div>
-					<label for="email">Email Address:</label>
-					<input type="email" id="email" name="email" required>
-				</div>
-				<div>
-					<label for="reason">Reason for Contact:</label>
-					<select id="reason" name="reason" required>
-						<option value="">--Please choose an option--</option>
-						<option value="hi">Saying hi</option>
-						<option value="contractor">Looking for a contractor</option>
-						<option value="interview">Interested in an interview</option>
-					</select>
-				</div>
-				<div>
-					<label for="comments">Comments:</label>
-					<textarea id="comments" name="comments" rows="5" required></textarea>
-				</div>
-				<div>
-					<button type="submit">Submit</button>
-				</div>
-			</form>
-		</section>
-	</main>
+   <header style="position:sticky;top:0;z-index:100;background:#3E6990;">
+	   <h1>MI349 Blog</h1>
+	   <nav>
+		   <ul>
+			   <li><a href="index.html">Home</a></li>
+			   <li><a href="about.html">About</a></li>
+			   <li><a href="contact.html">Contact</a></li>
+		   </ul>
+	   </nav>
+   </header>
+   <main>
+	   <div class="two-column">
+		   <div class="main-content">
+			   <section>
+				   <h2>Contact Me</h2>
+				   <form name="contact" method="POST" data-netlify="true" style="display:flex;gap:2rem;flex-wrap:wrap;align-items:flex-end;">
+					   <input type="hidden" name="form-name" value="contact">
+					   <div style="flex:1 1 200px;display:flex;flex-direction:column;">
+						   <label for="name">Name:</label>
+						   <input type="text" id="name" name="name" required>
+					   </div>
+					   <div style="flex:1 1 200px;display:flex;flex-direction:column;">
+						   <label for="email">Email Address:</label>
+						   <input type="email" id="email" name="email" required>
+					   </div>
+					   <div style="flex:1 1 200px;display:flex;flex-direction:column;">
+						   <label for="reason">Reason for Contact:</label>
+						   <select id="reason" name="reason" required>
+							   <option value="">--Please choose an option--</option>
+							   <option value="hi">Saying hi</option>
+							   <option value="contractor">Looking for a contractor</option>
+							   <option value="interview">Interested in an interview</option>
+						   </select>
+					   </div>
+					   <div style="flex:2 1 400px;display:flex;flex-direction:column;">
+						   <label for="comments">Comments:</label>
+						   <textarea id="comments" name="comments" rows="5" required></textarea>
+					   </div>
+					   <div style="flex:0 0 auto;align-self:flex-end;">
+						   <button type="submit">Submit</button>
+					   </div>
+				   </form>
+			   </section>
+		   </div>
+		   <aside class="sidebar">
+			   <h3>Get in Touch</h3>
+			   <ul>
+				   <li>Email: landon@example.com</li>
+				   <li>Twitter: @landonolesky</li>
+				   <li>LinkedIn: linkedin.com/in/landonolesky</li>
+			   </ul>
+		   </aside>
+	   </div>
+   </main>
 	
 </body>
 </html>

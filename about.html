@@ -7,31 +7,44 @@
 	<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-	<header>
-		<h1>MI349 Blog</h1>
-		<nav>
-			<ul>
-				<li><a href="index.html">Home</a></li>
-				<li><a href="about.html">About</a></li>
-				<li><a href="contact.html">Contact</a></li>
-			</ul>
-		</nav>
-	</header>
-	<main>
-		<section>
-			<h2>About the Author</h2>
-			<img src="https://images.unsplash.com/photo-1511367461989-f85a21fda167?auto=format&fit=crop&w=400&q=80" alt="Author portrait" style="float:right;max-width:200px;margin:0 0 1em 1em;">
-			<p>Hello! My name is Landon Olesky, and I am the creator of the MI349 Blog. I am passionate about technology, writing, and helping others learn new things. With a background in digital media and computer science, I enjoy exploring the intersection of creativity and technology.</p>
-			<p>When I’m not writing blog posts, you can find me experimenting with new recipes, hiking local trails, or curled up with a good book. I believe in lifelong learning and love sharing my discoveries with others.</p>
-			<h3>Fun Facts About Me</h3>
-			<ul>
-				<li>I have visited over 10 countries.</li>
-				<li>Coffee is my favorite beverage.</li>
-				<li>I once built a robot that could solve a Rubik’s Cube.</li>
-			</ul>
-			<p>Thank you for visiting my blog! I hope you find inspiration and useful information in every post.</p>
-		</section>
-	</main>
+   <header style="position:sticky;top:0;z-index:100;background:#3E6990;">
+	   <h1>MI349 Blog</h1>
+	   <nav>
+		   <ul>
+			   <li><a href="index.html">Home</a></li>
+			   <li><a href="about.html">About</a></li>
+			   <li><a href="contact.html">Contact</a></li>
+		   </ul>
+	   </nav>
+   </header>
+   <main>
+	   <div class="two-column">
+		   <div class="main-content">
+			   <section>
+				   <h2>About the Author</h2>
+				   <img src="https://images.unsplash.com/photo-1511367461989-f85a21fda167?auto=format&fit=crop&w=400&q=80" alt="Author portrait" class="float-img">
+				   <span class="img-caption">Landon Olesky, MI349 Blog Author</span>
+				   <p>Hello! My name is Landon Olesky, and I am the creator of the MI349 Blog. I am passionate about technology, writing, and helping others learn new things. With a background in digital media and computer science, I enjoy exploring the intersection of creativity and technology.</p>
+				   <p>When I’m not writing blog posts, you can find me experimenting with new recipes, hiking local trails, or curled up with a good book. I believe in lifelong learning and love sharing my discoveries with others.</p>
+				   <h3>Fun Facts About Me</h3>
+				   <ul>
+					   <li>I have visited over 10 countries.</li>
+					   <li>Coffee is my favorite beverage.</li>
+					   <li>I once built a robot that could solve a Rubik’s Cube.</li>
+				   </ul>
+				   <p>Thank you for visiting my blog! I hope you find inspiration and useful information in every post.</p>
+			   </section>
+		   </div>
+		   <aside class="sidebar">
+			   <h3>Contact & Social</h3>
+			   <ul>
+				   <li>Email: landon@example.com</li>
+				   <li>Twitter: @landonolesky</li>
+				   <li>LinkedIn: linkedin.com/in/landonolesky</li>
+			   </ul>
+		   </aside>
+	   </div>
+   </main>
 	
 </body>
 </html>
