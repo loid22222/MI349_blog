@@ -1,75 +1,116 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>MI349 Blog - Home</title>
-	<link rel="stylesheet" href="styles.css">
-</head>
-<body>
-	<header>
-		<h1>MI349 Blog</h1>
-		<nav>
-			<ul>
-				<li><a href="index.html">Home</a></li>
-				<li><a href="about.html">About</a></li>
-				<li><a href="contact.html">Contact</a></li>
-			</ul>
-		</nav>
-	</header>
-	<main>
-		<article>
-		<header>
-		<h2>The Vibrant Urban Life of Chicago: Transit and Walkability</h2>
-		<p>By <span class="author">Landon Olesky</span> | <time datetime="2025-09-20">September 23, 2025</time></p>
-		</header>
-		<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSckWI4L4Vj1EypxCwCw0KRSOMG2OJ3PpQK-w&s" alt="Chicago transit system" class="float-img">
-		<span class="img-caption">Chicago's iconic "L" train system</span>
-		<section>
-		<p>Chicago stands out as one of America’s most dynamic cities, celebrated for its robust public transit and exceptional walkability. The city’s iconic "L" train system, operated by the Chicago Transit Authority (CTA), weaves through neighborhoods and downtown, making it easy for residents and visitors to get around without a car. With over 140 stations and multiple lines, the "L" connects people to work, entertainment, and cultural destinations efficiently and affordably.</p>
-		<p>Beyond the trains, Chicago’s extensive bus network ensures that even areas not directly served by rail remain accessible. The city’s commitment to public transit reduces traffic congestion, lowers carbon emissions, and fosters a sense of community among commuters. For many, the daily ride on the "L" is a quintessential Chicago experience, offering unique views of the skyline and a window into the city’s vibrant life.</p>
-		<p>Chicago is also a walker’s paradise. Wide sidewalks, scenic boulevards, and a grid layout make navigation simple and enjoyable. Neighborhoods like the Loop, River North, and Lincoln Park are filled with shops, restaurants, and parks all within easy walking distance. The city’s lakefront trail stretches for miles, providing a beautiful route for pedestrians and cyclists alike. Whether you’re commuting, running errands, or exploring, Chicago’s urban design makes it easy to enjoy the city on foot.</p>
-		</section>
-		</article>
-		<article>
-		<header>
-		<h2>Lincoln Park: Where Nature and City Meet in Chicago</h2>
-		<p>By <span class="author">Landon Olesky</span> | <time datetime="2025-09-18">September 23, 2025</time></p>
-		</header>
-		<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPTOmuMTQuQBqFJygLoT8Yc57lY2htwMNjxA&s" alt="Lincoln Park neighborhood in Chicago" style="max-width:100%;height:auto;">
-		<section>
-		<p>Among Chicago’s many neighborhoods, Lincoln Park stands out for its seamless integration of nature into the urban landscape. Located just north of downtown, Lincoln Park is home to the city’s largest park of the same name, offering residents and visitors a green oasis in the heart of the city. The neighborhood features tree-lined streets, historic architecture, and easy access to the lakefront, making it a favorite for those who crave both city excitement and natural beauty.</p>
-		<p>Lincoln Park’s namesake park stretches for over 1,200 acres along Lake Michigan, providing space for gardens, ponds, sports fields, and the renowned Lincoln Park Zoo. The area is a haven for joggers, cyclists, and families, with scenic trails and picnic spots throughout. Community gardens and farmers markets bring fresh produce and flowers to the neighborhood, while the Peggy Notebaert Nature Museum offers educational experiences for all ages.</p>
-		<p>Let’s take a look at some of the features that make Lincoln Park unique:</p>
-		<table>
-		<thead>
-		<tr>
-		<th>Feature</th>
-		<th>Description</th>
-		<th>Benefit</th>
-		</tr>
-		</thead>
-		<tbody>
-		<tr>
-		<td>Lincoln Park Zoo</td>
-		<td>Free, family-friendly zoo in the heart of the park</td>
-		<td>Education and recreation for all ages</td>
-		</tr>
-		<tr>
-		<td>Lakefront Trail</td>
-		<td>Scenic path along Lake Michigan</td>
-		<td>Outdoor activities and beautiful views</td>
-		</tr>
-		<tr>
-		<td>Peggy Notebaert Nature Museum</td>
-		<td>Interactive exhibits and butterfly house</td>
-		<td>Learning about local ecology</td>
-		</tr>
-		</tbody>
-		</table>
-		<p>Lincoln Park is a shining example of how urban neighborhoods can embrace nature, offering a high quality of life and a strong sense of community. Whether you’re exploring the park, visiting the zoo, or relaxing by the lake, Lincoln Park brings the best of both worlds together.</p>
-		</section>
-		</article>
+   <header style="position:sticky;top:0;z-index:100;background:#3E6990;">
+	   <h1>MI349 Blog</h1>
+	   <nav>
+		   <ul>
+			   <li><a href="index.html">Home</a></li>
+			   <li><a href="about.html">About</a></li>
+			   <li><a href="contact.html">Contact</a></li>
+		   </ul>
+	   </nav>
+   </header>
+   <main>
+	   <!-- Two column Flexbox layout -->
+	   <div class="two-column">
+		   <div class="main-content">
+			   <article>
+				   <header>
+					   <h2>The Vibrant Urban Life of Chicago: Transit and Walkability</h2>
+					   <p>By <span class="author">Landon Olesky</span> | <time datetime="2025-09-20">September 23, 2025</time></p>
+				   </header>
+				   <!-- Floated image with caption -->
+				   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSckWI4L4Vj1EypxCwCw0KRSOMG2OJ3PpQK-w&s" alt="Chicago transit system" class="float-img">
+				   <span class="img-caption">Chicago's iconic "L" train system</span>
+				   <section>
+					   <p>Chicago stands out as one of America’s most dynamic cities, celebrated for its robust public transit and exceptional walkability. The city’s iconic "L" train system, operated by the Chicago Transit Authority (CTA), weaves through neighborhoods and downtown, making it easy for residents and visitors to get around without a car. With over 140 stations and multiple lines, the "L" connects people to work, entertainment, and cultural destinations efficiently and affordably.</p>
+					   <p>Beyond the trains, Chicago’s extensive bus network ensures that even areas not directly served by rail remain accessible. The city’s commitment to public transit reduces traffic congestion, lowers carbon emissions, and fosters a sense of community among commuters. For many, the daily ride on the "L" is a quintessential Chicago experience, offering unique views of the skyline and a window into the city’s vibrant life.</p>
+					   <p>Chicago is also a walker’s paradise. Wide sidewalks, scenic boulevards, and a grid layout make navigation simple and enjoyable. Neighborhoods like the Loop, River North, and Lincoln Park are filled with shops, restaurants, and parks all within easy walking distance. The city’s lakefront trail stretches for miles, providing a beautiful route for pedestrians and cyclists alike. Whether you’re commuting, running errands, or exploring, Chicago’s urban design makes it easy to enjoy the city on foot.</p>
+				   </section>
+			   </article>
+		   </div>
+		   <aside class="sidebar">
+			   <h3>Chicago Quick Facts</h3>
+			   <ul>
+				   <li>Population: 2.7 million</li>
+				   <li>CTA "L" stations: 140+</li>
+				   <li>Lakefront trail: 18 miles</li>
+			   </ul>
+		   </aside>
+	   </div>
+	   <!-- Three column Flexbox layout -->
+	   <div class="three-column">
+		   <aside class="side">
+			   <h3>Lincoln Park Attractions</h3>
+			   <ul>
+				   <li>Lincoln Park Zoo</li>
+				   <li>Peggy Notebaert Nature Museum</li>
+				   <li>Lakefront Trail</li>
+			   </ul>
+		   </aside>
+		   <div class="center">
+			   <article>
+				   <header>
+					   <h2>Lincoln Park: Where Nature and City Meet in Chicago</h2>
+					   <p>By <span class="author">Landon Olesky</span> | <time datetime="2025-09-18">September 23, 2025</time></p>
+				   </header>
+				   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPTOmuMTQuQBqFJygLoT8Yc57lY2htwMNjxA&s" alt="Lincoln Park neighborhood in Chicago" style="max-width:100%;height:auto;">
+				   <section>
+					   <p>Among Chicago’s many neighborhoods, Lincoln Park stands out for its seamless integration of nature into the urban landscape. Located just north of downtown, Lincoln Park is home to the city’s largest park of the same name, offering residents and visitors a green oasis in the heart of the city. The neighborhood features tree-lined streets, historic architecture, and easy access to the lakefront, making it a favorite for those who crave both city excitement and natural beauty.</p>
+					   <p>Lincoln Park’s namesake park stretches for over 1,200 acres along Lake Michigan, providing space for gardens, ponds, sports fields, and the renowned Lincoln Park Zoo. The area is a haven for joggers, cyclists, and families, with scenic trails and picnic spots throughout. Community gardens and farmers markets bring fresh produce and flowers to the neighborhood, while the Peggy Notebaert Nature Museum offers educational experiences for all ages.</p>
+					   <p>Let’s take a look at some of the features that make Lincoln Park unique:</p>
+					   <table>
+						   <thead>
+							   <tr>
+								   <th>Feature</th>
+								   <th>Description</th>
+								   <th>Benefit</th>
+							   </tr>
+						   </thead>
+						   <tbody>
+							   <tr>
+								   <td>Lincoln Park Zoo</td>
+								   <td>Free, family-friendly zoo in the heart of the park</td>
+								   <td>Education and recreation for all ages</td>
+							   </tr>
+							   <tr>
+								   <td>Lakefront Trail</td>
+								   <td>Scenic path along Lake Michigan</td>
+								   <td>Outdoor activities and beautiful views</td>
+							   </tr>
+							   <tr>
+								   <td>Peggy Notebaert Nature Museum</td>
+								   <td>Interactive exhibits and butterfly house</td>
+								   <td>Learning about local ecology</td>
+							   </tr>
+						   </tbody>
+					   </table>
+					   <p>Lincoln Park is a shining example of how urban neighborhoods can embrace nature, offering a high quality of life and a strong sense of community. Whether you’re exploring the park, visiting the zoo, or relaxing by the lake, Lincoln Park brings the best of both worlds together.</p>
+				   </section>
+			   </article>
+		   </div>
+		   <aside class="side">
+			   <h3>Neighborhoods Nearby</h3>
+			   <ul>
+				   <li>Old Town</li>
+				   <li>Lakeview</li>
+				   <li>Gold Coast</li>
+			   </ul>
+		   </aside>
+	   </div>
+	   <!-- Multi-column form layout using Flexbox -->
+	   <section>
+		   <h3>Subscribe to Our Newsletter</h3>
+		   <form action="#" method="post" style="display:flex;gap:1rem;flex-wrap:wrap;align-items:flex-end;">
+			   <div style="flex:1 1 200px;display:flex;flex-direction:column;">
+				   <label for="newsletter-email">Email Address:</label>
+				   <input type="email" id="newsletter-email" name="newsletter-email" required>
+			   </div>
+			   <div style="flex:0 0 auto;">
+				   <button type="submit">Subscribe</button>
+			   </div>
+		   </form>
+	   </section>
+   </main>
 		<section>
 			<h3>Subscribe to Our Newsletter</h3>
 			<form action="#" method="post">
