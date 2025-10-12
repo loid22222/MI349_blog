@@ -22,3 +22,78 @@ h2 {
     margin-top: 20px;
     margin-bottom: 10px;
 }
+/* Floated image with caption */
+.float-img {
+    float: right;
+    max-width: 220px;
+    margin: 0 0 1em 1em;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    background: #fff;
+}
+.img-caption {
+    display: block;
+    font-size: 0.95em;
+    color: #666;
+    text-align: center;
+    margin-top: 0.5em;
+    font-style: italic;
+}
+
+.two-column {
+    display: flex;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 2rem auto;
+}
+.two-column .main-content {
+    flex: 2;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    padding: 2rem;
+}
+.two-column .sidebar {
+    flex: 1;
+    background: #F7F6E7;
+    border-radius: 8px;
+    padding: 2rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+
+/* Three column Flexbox layout with large middle column */
+.three-column {
+    display: flex;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 2rem auto;
+}
+.three-column .side {
+    flex: 1;
+    background: #F7F6E7;
+    border-radius: 8px;
+    padding: 2rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+.three-column .center {
+    flex: 2;
+    background: #fff;
+    border-radius: 8px;
+    padding: 2rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+
+@media (max-width: 900px) {
+    .two-column, .three-column {
+        flex-direction: column;
+        gap: 0;
+        padding: 0 1rem;
+    }
+    .two-column .main-content,
+    .two-column .sidebar,
+    .three-column .side,
+    .three-column .center {
+        margin-bottom: 1rem;
+        padding: 1rem;
+    }
+}
