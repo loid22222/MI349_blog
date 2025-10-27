@@ -82,6 +82,13 @@ h2 {
     padding: 2rem;
     box-shadow: 0 2px 8px rgba(0,0,0,0.04);
 }
+img{
+    width :100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    margin-bottom: 1rem;
+}
 
 @media (max-width: 900px) {
     .two-column, .three-column {
