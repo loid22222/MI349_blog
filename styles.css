@@ -22,7 +22,7 @@ h2 {
     margin-top: 20px;
     margin-bottom: 10px;
 }
-/* Floated image with caption */
+
 .float-img {
     float: right;
     max-width: 220px;
@@ -82,7 +82,7 @@ h2 {
     padding: 2rem;
     box-shadow: 0 2px 8px rgba(0,0,0,0.04);
 }
-img{
+img {
     width :100%;
     height: auto;
     border-radius: 8px;
@@ -102,5 +102,74 @@ img{
     .three-column .center {
         margin-bottom: 1rem;
         padding: 1rem;
+    }
+}
+
+
+@media (max-width: 480px) {
+    h1{
+        font-size: 26px;
+        margin-top: 12px;
+        margin-bottom: 12px;
+    }
+    h2{
+        font-size: 20px;
+    }
+    body{
+        padding: 0 0.5rem;
+    }
+    .float-img{
+        float: none;
+        display: block;
+        max-width: 100%;
+        margin: 0 auto 1rem;
+    }
+    .img-caption{
+        font-size: 0.9em;
+    }
+    .two-column, .three-column{
+        gap: 0.5rem;
+        padding: 0 0.5rem;
+    }
+    .two-column .main-content,
+    .two-column .sidebar,
+    .three-column .side,
+    .three-column .center{
+        padding: 0.75rem;
+    }
+}
+
+@media (max-width: 768px) and (min-width: 481px) {
+    
+    h1{
+        font-size: 30px;
+    }
+    .float-img{
+        max-width: 180px;
+    }
+    .two-column, .three-column{
+        padding: 0 0.75rem;
+        gap: 1rem;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1199px) {
+    
+    .two-column, .three-column{
+        gap: 2.5rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    
+    .two-column, .three-column{
+        max-width: 1400px;
+    }
+    .two-column .main-content,
+    .three-column .center{
+        padding: 3rem;
+    }
+    body{
+        font-size: 18px;
     }
 }
